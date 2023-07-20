@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>NotNotion</title>
+  </head>
+  <body>
+    <main>
+      <section class="outer-wrap">
+        <section class="inner-wrap">
+          <section class="heading">
+            <p class="title">notNotion</p>
+            <p class="sub_title">
+              Your Custom News Portal With Selected Categories and Updates!
+            </p>
+          </section>
+
+          <section class="news">
+            <div class="category">
+              <button class="active" data-url="/top-headlines?country=us">
+                US(All)
+              </button>
+              <button data-url="/top-headlines?country=us&category=sports">
+                Sports
+              </button>
+              <button
+                data-url="/top-headlines?country=us&category=entertainment"
+              >
+                Entertainment
+              </button>
+              <button
+                data-url="/everything?q=cryptocurrency&from=2023-06-12&sortBy=publishedAt"
+              >
+                Cryptocurrency
+              </button>
+              <button data-url="/top-headlines?q=gaming">Gaming</button>
+              <button
+                data-url="/everything?q=apple&from=2023-06-12&sortBy=publishedAt&language=en"
+              >
+                Technology
+              </button>
+            </div>
+          </section>
+
+          <section class="cards"></section>
+        </section>
+      </section>
+
+      <script src="index.js"></script>
+    </main>
+  </body>
+</html>
